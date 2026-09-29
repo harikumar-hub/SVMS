@@ -1,0 +1,67 @@
+export const INITIAL_TECHNICIANS = [
+  {
+    id: 'usr-tech-1',
+    name: 'Vignesh Kumar',
+    email: 'vignesh@nexacare.in',
+    phone: '+91 96290 45678',
+    providerId: 'usr-prov-1',
+    providerName: 'NexaCare Service Center',
+    specialty: 'Engine Diagnostics & Multi-Point Inspection',
+    experienceYears: 7,
+    certifications: ['ITI Certified Motor Mechanic', 'Bosch Diagnostic Specialist'],
+    avatar: '',
+    activeJobsCount: 2,
+    status: 'ACTIVE',
+    rating: 4.9,
+    completedJobs: 135
+  },
+  {
+    id: 'usr-tech-2',
+    name: 'Santhosh M',
+    email: 'santhosh@nexacare.in',
+    phone: '+91 98940 56789',
+    providerId: 'usr-prov-1',
+    providerName: 'NexaCare Service Center',
+    specialty: 'Brakes, Suspension & Wheel Alignment',
+    experienceYears: 5,
+    certifications: ['Automobile Diploma', 'Wheel Alignment Pro'],
+    avatar: '',
+    activeJobsCount: 1,
+    status: 'ACTIVE',
+    rating: 4.8,
+    completedJobs: 110
+  },
+  {
+    id: 'usr-tech-3',
+    name: 'Dinesh K',
+    email: 'dinesh@nexacare.in',
+    phone: '+91 97500 11234',
+    providerId: 'usr-prov-1',
+    providerName: 'NexaCare Service Center',
+    specialty: 'AC Cooling & Auto Electricals',
+    experienceYears: 4,
+    certifications: ['Auto Electrical Specialist'],
+    avatar: '',
+    activeJobsCount: 0,
+    status: 'ACTIVE',
+    rating: 4.7,
+    completedJobs: 82
+  },
+  {
+    id: 'usr-tech-4',
+    name: 'Praveen Kumar',
+    email: 'praveen@nexacare.in',
+    phone: '+91 98436 78901',
+    providerId: 'usr-prov-1',
+    providerName: 'NexaCare Service Center',
+    specialty: 'Periodic Maintenance & Oil Service',
+    experienceYears: 6,
+    certifications: ['Automotive Service Technician'],
+    avatar: '',
+    activeJobsCount: 2,
+    status: 'ACTIVE',
+    rating: 4.85,
+    completedJobs: 120
+  }
+];
+
