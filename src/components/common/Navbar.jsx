@@ -165,10 +165,7 @@ export const Navbar = ({ onToggleSidebar }) => {
           {isAuthenticated ? (
             <div style={{ position: 'relative' }}>
               <button
-                onClick={() => {
-                  setIsProfileOpen(!isProfileOpen);
-                  setIsRoleMenuOpen(false);
-                }}
+                onClick={() => setIsProfileOpen(!isProfileOpen)}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
