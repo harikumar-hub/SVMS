@@ -51,9 +51,13 @@ export const DataProvider = ({ children }) => {
   const [technicians, setTechnicians] = useState(() => loadState('technicians', INITIAL_TECHNICIANS));
   const [spareParts, setSpareParts] = useState(() => loadState('spareParts', INITIAL_SPARE_PARTS));
   const [appointments, setAppointments] = useState(() => loadState('appointments', INITIAL_APPOINTMENTS));
-  const [partsRequests, setPartsRequests] = useState(() => loadState('partsRequests', INITIAL_PARTS_REQUESTS));
-  const [reminders, setReminders] = useState(() => loadState('reminders', INITIAL_REMINDERS));
-  const [notifications, setNotifications] = useState(() => loadState('notifications', INITIAL_NOTIFICATIONS));
+  const [reminders, setReminders] = useState(() => {
+    const loaded = loadState('reminders', INITIAL_REMINDERS);
+    if (!loaded || !Array.isArray(loaded) || loaded.length === 0 || loaded.some((r) => r.userId === 'usr-cust-1')) {
+      return INITIAL_REMINDERS;
+    }
+    return loaded;
+  });
   const [staffRequests, setStaffRequests] = useState(() => loadState('staffRequests', []));
   const [serviceRecords, setServiceRecords] = useState([]);
   const [serviceProgressList, setServiceProgressList] = useState([]);
